@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.axieum.mcmod.authme.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [],
+  "server": [],
+  "client": [
+    "DisconnectedScreenMixin",
+    "MinecraftClientAccessor",
+    "MultiplayerScreenMixin",
+    "RealmsGenericErrorScreenMixin",
+    "RealmsMainScreenAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

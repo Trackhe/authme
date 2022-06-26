@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "me.auxieum",
+    "id": "authme",
+    "version": "4.0.0",
+    "metadata": {
+      "name": "Auth Me",
+      "description": "Authenticate yourself in Minecraft and re-validate your session",
+      "contributors": {
+        "Michael Nehring": "Editor"
+      },
+      "icon": "assets/authme/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "client": [
+        "me.axieum.mcmod.authme.impl.AuthMe"
+      ],
+      "modmenu": [
+        "me.axieum.mcmod.authme.impl.compat.ModMenuApiImpl"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": ">=0.17.1-"
+      },
+      {
+        "id": "quilted_fabric_api",
+        "versions": ">=2.0.0-"
+      },
+      {
+        "id": "minecraft",
+        "versions": ">=1.19"
+      },
+      {
+        "id": "cloth-config2",
+        "versions": "*"
+      }
+    ]
+  },
+  "environment": "client",
+  "mixins": "authme.mixins.json"
+}
